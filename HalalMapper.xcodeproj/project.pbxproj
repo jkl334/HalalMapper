@@ -14,6 +14,7 @@
 		CEC9393D1AEE865C00A777E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC9393C1AEE865C00A777E3 /* Images.xcassets */; };
 		CEC939401AEE865C00A777E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC9393E1AEE865C00A777E3 /* LaunchScreen.xib */; };
 		CEC9394C1AEE865C00A777E3 /* HalalMapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC9394B1AEE865C00A777E3 /* HalalMapperTests.m */; };
+		CEC939561AEE8F8900A777E3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC939551AEE8F8900A777E3 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		CEC939451AEE865C00A777E3 /* HalalMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HalalMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC9394A1AEE865C00A777E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC9394B1AEE865C00A777E3 /* HalalMapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalalMapperTests.m; sourceTree = "<group>"; };
+		CEC939551AEE8F8900A777E3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC939561AEE8F8900A777E3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		CEC939231AEE865B00A777E3 = {
 			isa = PBXGroup;
 			children = (
+				CEC939551AEE8F8900A777E3 /* MapKit.framework */,
 				CEC9392E1AEE865B00A777E3 /* HalalMapper */,
 				CEC939481AEE865C00A777E3 /* HalalMapperTests */,
 				CEC9392D1AEE865B00A777E3 /* Products */,
@@ -168,6 +172,11 @@
 				TargetAttributes = {
 					CEC9392B1AEE865B00A777E3 = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CEC939441AEE865C00A777E3 = {
 						CreatedOnToolsVersion = 6.3.1;
